@@ -396,6 +396,7 @@ void play_medium_mode() {
     cout << "  1) You guess the number\n";
     cout << "  2) AI guesses your number\n";
     cout << "  0) Cancel\n";
+    cout << " In order to optimize thesoution you should create its log then try catching the factor making the answer slow"
     cout << " Note: Medium mode is a great way to practice biinary search with a large range and more options for guessing strategy than easymode. It's perfect for players who want a bit mode of a challenge while still being able to find the number in a reeasonable number of guesses. Try it out and see how you do! ";
 
     long long choice = get_valid_input("Enter choice (0-2): ");
@@ -444,6 +445,8 @@ void play_hard_mode() {
     cout << "  1) You guess the number\n";
     cout << "  2) AI guesses your number\n";
     cout << "  0) Cancel\n";
+    cout << "  3) Stop the game";
+    cout << "  4) Return to the main menu";
     
     long long choice = get_valid_input("Enter choice (0-2): ");
     
