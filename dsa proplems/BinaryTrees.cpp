@@ -10,7 +10,7 @@ using namespace std;
 //     // cout << "top most element is called root" << endl;
 //     // cout << "leaf nodes are those which has no children, the nodes children are known as left child and right child";
 
-//     // cout << "ancestor are called parent and parents parents ";
+    // cout << "ancestor are called parent and parents parents ";
 
 //     // cout << " descendents are sub child of the parents";
 //     int height =  0;
@@ -43,8 +43,8 @@ Node* buildTree(vector<int> binaryTree){
     currNode->right = buildTree(binaryTree);//right subTree
     
     return currNode;
+};
 
-}
 int main(){
     // vector<int> arr = {1, 2, 0 , 3, 4, 5,6, 1, 2, 3, 4, 5, 6, -1,9};
     vector<int> binaryTree = {};
@@ -52,8 +52,11 @@ int main(){
     // vector<int> arr3 = {3, 4, 5, 64, 5, 6, 7, 8, 9, 0, 65, 45, 34, 2,3 45, 4,5 6, 2, 56 ,5,5,45, 0, 8, 9};
     // vector<int>arr4 = {};
     return 0;
+    cout << "root then left then right in preorderTraversal";
+
 };
 
 
 
 //four types of traversals 
+//1 2 4
