@@ -103,6 +103,15 @@ int sumOfNodes(Node* root){
     return sumOfNodes(root->right) + sumOfNodes(root->left) + root->data;
 };
 
+int transform(Node* root){
+    if(root == NULL){
+        return 0;
+    }
+    int leftOld = transform(root->left);
+    int rightOld = transform(root->right);
+}
+
+
 int main(){ 
     vector<int> binaryTree = {1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1};
     Node* root = buildTree(binaryTree);
