@@ -111,6 +111,23 @@ int transform(Node* root){
     int rightOld = transform(root->right);
 }
 
+bool bstsearch(Node* root, int key){
+    if(root == NULL){
+        return false;
+    }
+    if(root->data == key){
+        return true;
+    }
+    if(root->data < key){
+        bstsearch(root->left, key);
+    }
+    if(root->data < key){
+        bstsearch(root->right, key);
+    }
+}
+
+void insert()
+
 
 int main(){ 
     vector<int> binaryTree = {1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1};
@@ -118,6 +135,7 @@ int main(){
     // preOrder(root);
     // postOrder(root);
     // inOrder(root);
+    vector<int> arr = {};
     cout << "root:" << noOfNodes(root) << endl;
     cout << "sum: " << sumOfNodes(root) << endl;
     return 0;
